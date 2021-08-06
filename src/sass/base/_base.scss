@@ -1,0 +1,78 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @include media(min, width, 2500) {
+    font-size: 100%;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  border: 0;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-weight: normal;
+    font-family: inherit;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: currentColor;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 1px solid $dark;
+  outline-offset: 0.5rem;
+}
+
+svg {
+  height: 2rem;
+  width: 2rem;
+  fill: currentColor;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  border: 0;
+  border-radius: 0;
+  font-family: $font;
+  font-size: 1.6rem;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// Removes break elements on breakpoint
+#break {
+  @include media(max, width, 430) {
+    display: none;
+  }
+}
+
+#break-2 {
+  @include media(max, width, 370) {
+    display: none;
+  }
+}

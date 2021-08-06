@@ -1,0 +1,32 @@
+@mixin media($type, $parameter, $breakpoint) {
+  @if $type == max {
+    @if $parameter == width {
+      @media (max-width: $breakpoint / 16 + 'em') {
+        @content;
+      }
+    } @else if $parameter == height {
+      @media (max-height: $breakpoint / 16 + 'em') {
+        @content;
+      }
+    }
+  } @else if $type == min {
+    @if $parameter == width {
+      @media (min-width: $breakpoint / 16 + 'em') {
+        @content;
+      }
+    } @else if $parameter == height {
+      @media (min-height: $breakpoint / 16 + 'em') {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin image {
+  img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

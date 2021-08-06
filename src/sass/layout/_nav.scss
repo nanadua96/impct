@@ -1,0 +1,73 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  font-size: 1.6rem;
+  border-bottom: $border;
+
+  &__logo {
+    height: 5.5rem;
+    width: 5.5rem;
+    fill: $black;
+  }
+
+  &__items {
+    display: flex;
+    gap: 6rem;
+    padding-left: 0;
+
+    @include media(max, width, 800) {
+      display: none;
+    }
+  }
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  &__btn {
+    padding: 0.5rem 2rem;
+    border-radius: 0.8rem;
+
+    @include media(max, width, 630) {
+      display: none;
+    }
+
+    small {
+      display: block;
+      text-align: left;
+    }
+
+    small:first-child {
+      font-size: 1.6rem;
+    }
+
+    small:last-child {
+      color: #000000b3;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  &__avatar {
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    overflow: hidden;
+    cursor: pointer;
+
+    @include image;
+
+    @include media(max, width, 630) {
+      display: none;
+    }
+  }
+}

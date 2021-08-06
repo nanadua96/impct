@@ -1,0 +1,12 @@
+# Folders
+files/
+node_modules/
+public/*
+
+# Parcel
+parcel/
+
+
+
+
+
