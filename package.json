@@ -1,0 +1,15 @@
+{
+  "private": "true",
+  "scripts": {
+    "start": "parcel serve ./src/*.html --dist-dir ./parcel/dist --cache-dir ./parcel/cache --open --port 8080",
+    "build": "parcel build ./src/*.html --dist-dir ./public/ --cache-dir ./parcel/cache --public-url ./ --no-source-maps"
+  },
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-beta.3.1",
+    "@parcel/transformer-sass": "^2.0.0-beta.3.1",
+    "parcel": "^2.0.0-beta.3.1"
+  },
+  "dependencies": {
+    "gsap": "^3.7.1"
+  }
+}

@@ -6,6 +6,9 @@ public/*
 # Parcel
 parcel/
 
+# Files
+node_modules.zip
+
 
 
 
