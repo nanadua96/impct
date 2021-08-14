@@ -46,11 +46,40 @@
 
   @include media(max, width, 1080) {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  @include media(max, width, 360) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  @include media(max, width, 480) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 }
 
-// Individual cards
+// Selects all individual cards
+.benefits-container > .benefit {
+  // background-color: red;
+  // grid-column: auto;
+  // grid-row: auto;
+
+  @include media(max, width, 1024) {
+    // background-color: red;
+    grid-column: auto;
+    grid-row: auto;
+  }
+  // @include media(max, width, 360) {
+  //   background-color: red;
+  //   grid-column: auto;
+  //   grid-row: auto;
+  // }
+}
+
+//! Add padding top and bottom 12rem on all cards!! Ill be back
+// Cards
 .benefit {
   padding: 4rem;
   border-radius: 2rem;
@@ -86,6 +115,7 @@
   }
 }
 
+// Single cards
 .benefit--1 {
   padding: 3rem;
   background-color: $orange-dark;
@@ -105,9 +135,18 @@
   }
 
   @include media(max, width, 480) {
-    height: 70%;
+    height: 60%;
     align-self: end;
   }
+
+  @include media(max, width, 360) {
+    padding: 12rem 0;
+  }
+
+  // @include media(max, width, 350) {
+  //   grid-column: auto;
+  //   grid-row: auto;
+  // }
 
   p {
     text-transform: capitalize;
