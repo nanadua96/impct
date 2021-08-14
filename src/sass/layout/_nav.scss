@@ -5,21 +5,21 @@
   height: 8rem;
   font-size: 1.6rem;
   border-bottom: $border;
+}
 
-  &__logo {
-    height: 5.5rem;
-    width: 5.5rem;
-    fill: $black;
-  }
+.nav__logo {
+  height: 5.5rem;
+  width: 5.5rem;
+  fill: $black;
+}
 
-  &__items {
-    display: flex;
-    gap: 6rem;
-    padding-left: 0;
+.nav__items {
+  display: flex;
+  gap: 6rem;
+  padding-left: 0;
 
-    @include media(max, width, 800) {
-      display: none;
-    }
+  @include media(max, width, 800) {
+    display: none;
   }
 }
 
@@ -28,48 +28,52 @@
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+}
 
-  &__btn {
-    padding: 0.5rem 2rem;
-    border-radius: 0.8rem;
+.user__btn {
+  padding: 0.5rem 2rem;
+  border-radius: 0.8rem;
 
-    @include media(max, width, 630) {
-      display: none;
-    }
-
-    small {
-      display: block;
-      text-align: left;
-    }
-
-    small:first-child {
-      font-size: 1.6rem;
-
-      color: red;
-    }
-
+  &:hover {
     small:last-child {
-      color: #000000b3;
+      color: $light;
     }
   }
 
-  &__info {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
+  @include media(max, width, 630) {
+    display: none;
   }
 
-  &__avatar {
-    border-radius: 50%;
-    height: 4rem;
-    width: 4rem;
-    overflow: hidden;
-    cursor: pointer;
+  small {
+    display: block;
+    text-align: left;
+  }
 
-    @include image;
+  small:first-child {
+    font-size: 1.6rem;
+  }
 
-    @include media(max, width, 630) {
-      display: none;
-    }
+  small:last-child {
+    color: #000000b3;
+  }
+}
+
+.user__info {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.user__avatar {
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  overflow: hidden;
+  cursor: pointer;
+
+  @include image;
+
+  @include media(max, width, 630) {
+    display: none;
   }
 }

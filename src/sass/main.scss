@@ -1,14 +1,21 @@
 @charset "UTF-8";
 
 // 1. Abstracts
-@import 'abstracts/variables', 'abstracts/mixins';
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
 
 // 2. Base
-@import 'base/base', 'base/fonts', 'base/typography', 'base/helpers';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/helpers';
 
-// 3. Layout
-@import 'layout/nav', 'layout/header', 'layout/features', 'layout/benefits',
-  'layout/brands', 'layout/footer';
-
-// 4. Components
+// 3. Components
 @import 'components/button';
+
+// 4. Layout
+@import 'layout/nav';
+@import 'layout/header';
+@import 'layout/features';
+@import 'layout/benefits';
+@import 'layout/brands';
+@import 'layout/footer';

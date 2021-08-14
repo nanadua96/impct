@@ -5,11 +5,7 @@
     "build": "parcel build ./src/*.html --dist-dir ./public/ --cache-dir ./parcel/cache --public-url ./ --no-source-maps"
   },
   "devDependencies": {
-    "@parcel/transformer-image": "^2.0.0-beta.3.1",
     "@parcel/transformer-sass": "^2.0.0-beta.3.1",
     "parcel": "^2.0.0-beta.3.1"
-  },
-  "dependencies": {
-    "gsap": "^3.7.1"
   }
 }

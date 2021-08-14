@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro Regular';
+  src: url('../fonts/NeueHaasDisplay-Roman.woff2') format('woff2');
+  font-display: swap;
+}
+
 body {
   font-family: 'Neue Haas Grotesk Display Pro Regular', sans-serif;
   font-size: 2rem;

@@ -52,6 +52,10 @@
     padding-left: 10rem;
   }
 
+  @include media(max, width, 1080) {
+    padding-left: 5rem;
+  }
+
   @include media(max, width, 980) {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;

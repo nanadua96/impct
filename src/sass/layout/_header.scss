@@ -1,8 +1,6 @@
 .header {
   display: flex;
   min-height: auto;
-  // Debug
-  // background-color: darkred;
 
   @include media(max, width, 1300) {
     gap: 2rem;
@@ -20,8 +18,6 @@
   height: 100%;
   flex-basis: 50%;
   position: relative;
-  // Debug
-  //   background-color: darkorchid;
 
   @include media(max, width, 1300) {
     display: flex;
@@ -38,8 +34,6 @@
     height: 100%;
     width: 70%;
     overflow: hidden;
-    // Debug
-    // background-color: darkcyan;
 
     @include image;
 
@@ -118,8 +112,6 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(8, 1fr);
   gap: 2rem;
-  // Debug
-  //   background-color: dodgerblue;
 
   @include media(max, width, 1800) {
     height: 55%;
