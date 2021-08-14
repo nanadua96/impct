@@ -1,7 +1,9 @@
+/** Wrapper **/
 .brands {
   background-color: $orange-dark;
   color: $white;
   display: flex;
+  align-items: center;
 
   @include media(max, width, 980) {
     text-align: center;
@@ -10,88 +12,177 @@
   }
 }
 
+/** Copy **/
 .brands__copy {
   flex-basis: 50%;
+  padding-left: 10vw;
   display: flex;
   flex-direction: column;
   gap: 4rem;
 
-  .text-1 {
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: 2px;
-  }
-
-  .text-2 {
-    color: $light;
-    font-size: 1.4rem;
+  @include media(max, width, 980) {
+    padding: 10rem 10vw;
+    padding-bottom: 0;
   }
 }
 
-.brands__icons {
+.brands__copy .text-1 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+.brands__copy .text-2 {
+  color: $light;
+  font-size: 1.4rem;
+}
+
+/**  Icons **/
+.brand__icons {
   flex-basis: 50%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  padding: 2rem 0;
+  padding-left: 20rem;
+  gap: 1.6rem;
+  border-radius: 1.6rem;
+
+  @include media(max, width, 1700) {
+    padding-left: 10rem;
+  }
+
+  @include media(max, width, 980) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    padding: 0 10vw;
+    padding-bottom: 10rem;
+  }
 }
 
-.brands__icon {
+// Styles for all brand icons but with higher speciifity, DO NOT TOUCH
+.brand__icons .brand__icon {
+  @include media(max, width, 980) {
+    grid-column: auto;
+    grid-row: auto;
+    background-color: transparent;
+  }
+}
+
+.brand__icon {
   margin: auto;
   padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include media(max, width, 400) {
     padding: 1rem;
   }
+}
 
-  svg {
-    height: 12rem;
-    width: 12rem;
+.brand__icon svg {
+  height: 12rem;
+  width: 12rem;
 
-    @include media(max, width, 1330) {
-      height: 10rem;
-      width: 10rem;
-    }
-
-    @include media(max, width, 720) {
-      height: 7rem;
-      width: 7rem;
-    }
-
-    @include media(max, width, 400) {
-      height: 5.5rem;
-      width: 5.5rem;
-    }
-
-    @include media(max, width, 300) {
-      height: 5rem;
-      width: 5rem;
-    }
+  @include media(max, width, 1330) {
+    height: 10rem;
+    width: 10rem;
   }
 
-  &--6 {
-    svg {
-      height: 10rem;
-      width: 10rem;
+  @include media(max, width, 720) {
+    height: 7rem;
+    width: 7rem;
+  }
 
-      @include media(max, width, 1330) {
-        height: calc(10rem - 2rem);
-        width: calc(10rem - 2rem);
-      }
+  @include media(max, width, 400) {
+    height: 5.5rem;
+    width: 5.5rem;
+  }
 
-      @include media(max, width, 720) {
-        height: calc(10rem - 5rem);
-        width: calc(10rem - 5rem);
-      }
+  @include media(max, width, 300) {
+    height: 5rem;
+    width: 5rem;
+  }
+}
 
-      @include media(max, width, 400) {
-        height: calc(10rem - 6rem);
-        width: calc(10rem - 6rem);
-      }
+// Champion logo
+.brand__icon--1 {
+  width: 100%;
+  height: 16rem;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  background-color: rgba($brand-card, 0.5);
 
-      @include media(max, width, 300) {
-        height: calc(10rem - 7rem);
-        width: calc(10rem - 7rem);
-      }
-    }
+  @include media(max, width, 1500) {
+    height: 12rem;
+  }
+
+  @include media(max, width, 1200) {
+    height: 10rem;
+  }
+
+  @include media(max, width, 980) {
+    height: 12rem;
+    width: 12rem;
+  }
+
+  @include media(max, width, 720) {
+    height: 9rem;
+    width: 9rem;
+  }
+
+  @include media(max, width, 400) {
+    height: 6rem;
+    width: 6rem;
+  }
+}
+
+.brand__icon--1 svg {
+  height: 6rem;
+  width: 6rem;
+  fill: $white;
+
+  @include media(max, width, 1200) {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  @include media(max, width, 980) {
+    height: inherit;
+    width: inherit;
+  }
+}
+
+// Adidas logo
+.brand__icon--2 {
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+  height: 100%;
+  width: 100%;
+  background-color: rgba($brand-card, 0.1);
+}
+
+// Nike logo
+.brand__icon--3 {
+  grid-column: 3 / 5;
+  grid-row: 3 / 5;
+  height: 100%;
+  width: 100%;
+  background-color: $brand-card;
+}
+
+.brand__icon--4 {
+  height: 100%;
+  width: 100%;
+  grid-column: 4 / 5;
+  grid-row: 1 / 3;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  background-color: rgba($brand-card, 0.1);
+
+  @include media(max, width, 980) {
+    display: none;
   }
 }
