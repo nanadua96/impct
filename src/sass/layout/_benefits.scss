@@ -18,8 +18,8 @@
   justify-content: center;
   gap: 1rem;
   margin: auto;
-  width: 62%;
-  height: 60%;
+  width: 70%;
+  height: 60rem;
 
   @include media(max, width, 1780) {
     width: 70%;
@@ -215,5 +215,9 @@
     text-transform: capitalize;
     -webkit-hyphens: auto;
     hyphens: auto;
+  }
+
+  p {
+    text-align: center;
   }
 }
