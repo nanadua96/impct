@@ -15,7 +15,6 @@
 
 .nav__items {
   display: flex;
-  gap: 6rem;
   padding-left: 0;
 
   @include media(max, width, 800) {
@@ -23,11 +22,18 @@
   }
 }
 
+.nav__items > *:not(:last-child) {
+  margin-right: 6rem;
+}
+
 .user {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+}
+
+.user > *:not(:last-child) {
+  margin-right: 2rem;
 }
 
 .user__btn {
@@ -61,7 +67,10 @@
 .user__info {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+}
+
+.user__info > *:not(:last-child) {
+  margin-right: 1rem;
 }
 
 .user__avatar {
