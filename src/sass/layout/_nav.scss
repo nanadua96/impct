@@ -5,6 +5,10 @@
   height: 8rem;
   font-size: 1.6rem;
   border-bottom: $border;
+
+  @include media(max, width, 630) {
+    height: 6rem;
+  }
 }
 
 .nav__logo {

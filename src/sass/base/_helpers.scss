@@ -42,4 +42,9 @@
 .p-large {
   padding-top: 16rem;
   padding-bottom: 16rem;
+
+  @include media(max, width, 1080) {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
 }
