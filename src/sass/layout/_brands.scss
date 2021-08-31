@@ -31,9 +31,7 @@
 }
 
 .brands__copy > *:not(:last-child) {
-  @include media(max, width, 980) {
-    margin-bottom: 4rem;
-  }
+  margin-bottom: 4rem;
 }
 
 .brands__copy .text-1 {
