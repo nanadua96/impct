@@ -52,7 +52,8 @@ svg {
   fill: currentColor;
 }
 
-img {
+img,
+picture {
   max-width: 100%;
 }
 
@@ -69,13 +70,13 @@ button {
 }
 
 // Removes break elements on breakpoint
-#break {
+.break {
   @include media(max, width, 430) {
     display: none;
   }
 }
 
-#break-2 {
+.break-2 {
   @include media(max, width, 370) {
     display: none;
   }

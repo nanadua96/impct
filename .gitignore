@@ -2,7 +2,6 @@
 files/
 node_modules/
 public/*
-parcel/
 
 # Files
 node_modules.zip

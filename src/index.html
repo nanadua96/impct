@@ -16,7 +16,7 @@
         <nav class="nav container-small">
             <a href="#">
                 <svg class="nav__logo" viewBox="0 0 418.18 106.587">
-                    <path d="M3.584,57.782V-44.65H24.357V57.782Zm36.675,0V-44.65H69.484L83.954,6.781q1.576,5.73,3.223,12.679t2.507,10.959L90.4,34.43h.287q2.722-14.756,6.3-27.649L111.46-44.65h29.655V57.782h-19.34V-.956l.86-21.2h-.287q-2.292,12.034-4.441,19.484L100.285,57.782H80.372L63.181-2.675,58.74-22.158h-.287q.86,12.894.86,21.2V57.782Zm116.615,0V-44.65h44.984q17.478,0,26.79,9.6,9.169,9.455,9.169,23.352,0,14.613-9.169,23.495t-25.071,8.882H178.363v37.1ZM178.363-26.6V3.772h21.489q8.023,0,12.32-4.083t4.3-11.246q0-7.163-4.3-11.1T200.139-26.6ZM294.4,59.931q-21.632,0-35.457-14.971T245.123,6.924q0-23.208,13.467-38.394t35.672-15.186q18.337,0,29.44,9.67A37.342,37.342,0,0,1,336.524-12.13h-20.63A20.039,20.039,0,0,0,308.8-24.594q-5.659-4.584-14.541-4.584-13.61,0-20.773,10.028T266.326,6.924q0,15.9,7.664,25.93A24.411,24.411,0,0,0,294.4,42.882q9.026,0,15.042-4.943a19.344,19.344,0,0,0,7.02-13.108H336.81a34.722,34.722,0,0,1-11.318,24.211Q313.888,59.931,294.4,59.931Zm44.984-87.1V-44.65h82.375v17.478h-30.8V57.782H370.19V-27.172Z" transform="translate(-3.584 46.656)">
+                    <path d="M3.584,57.782V-44.65H24.357V57.782Zm36.675,0V-44.65H69.484L83.954,6.781q1.576,5.73,3.223,12.679t2.507,10.959L90.4,34.43h.287q2.722-14.756,6.3-27.649L111.46-44.65h29.655V57.782h-19.34V-.956l.86-21.2h-.287q-2.292,12.034-4.441,19.484L100.285,57.782H80.372L63.181-2.675,58.74-22.158h-.287q.86,12.894.86,21.2V57.782Zm116.615,0V-44.65h44.984q17.478,0,26.79,9.6,9.169,9.455,9.169,23.352,0,14.613-9.169,23.495t-25.071,8.882H178.363v37.1ZM178.363-26.6V3.772h21.489q8.023,0,12.32-4.083t4.3-11.246q0-7.163-4.3-11.1T200.139-26.6ZM294.4,59.931q-21.632,0-35.457-14.971T245.123,6.924q0-23.208,13.467-38.394t35.672-15.186q18.337,0,29.44,9.67A37.342,37.342,0,0,1,336.524-12.13h-20.63A20.039,20.039,0,0,0,308.8-24.594q-5.659-4.584-14.541-4.584-13.61,0-20.773,10.028T266.326,6.924q0,15.9,7.664,25.93A24.411,24.411,0,0,0,294.4,42.882q9.026,0,15.042-4.943a19.344,19.344,0,0,0,7.02-13.108H336.81a34.722,34.722,0,0,1-11.318,24.211Q313.888,59.931,294.4,59.931Zm44.984-87.1V-44.65h82.375v17.478h-30.8V57.782H370.19V-27.172Z" transform="translate(-3.584 46.656)" />
                 </svg>
             </a>
             <ul class="nav__items">
@@ -33,17 +33,20 @@
                     <button class="btn-user-name">
                         Marina
                         <svg viewBox="0 0 248.289 159.614">
-                            <path d="M5,9,129.144,168.614,253.289,9Z" transform="translate(-5 -9)">
+                            <path d="M5,9,129.144,168.614,253.289,9Z" transform="translate(-5 -9)" />
                         </svg>
                     </button>
                     <div class="user__avatar">
-                        <img src="./img/avatar.webp" alt="User avatar" draggable="false">
+                        <picture>
+                            <source srcset="./images/avatar.webp" draggable="false" type="image/webp">
+                            <img src="./images/avatar.jpg" alt="User avatar" draggable="false">
+                        </picture>
                     </div>
                 </div>
                 <!-- Hamburger menu -->
                 <button class="btn btn-mobile">
                     <svg viewBox="0 0 50 50">
-                        <path d="M0 7.5L0 12.5L50 12.5L50 7.5 Z M 0 22.5L0 27.5L50 27.5L50 22.5 Z M 0 37.5L0 42.5L50 42.5L50 37.5Z">
+                        <path d="M0 7.5L0 12.5L50 12.5L50 7.5 Z M 0 22.5L0 27.5L50 27.5L50 22.5 Z M 0 37.5L0 42.5L50 42.5L50 37.5Z" />
                     </svg>
                 </button>
             </div>
@@ -52,7 +55,10 @@
         <header class="header container-small mt-medium mb-large">
             <div class="hero-image">
                 <div class="hero-image__img">
-                    <img src="./img/hero-img.webp" alt="A woman holding a phone" draggable="false">
+                    <picture>
+                        <source srcset="./images/hero-img.webp" draggable="false" type="image/webp">
+                        <img src="./images/hero-img.jpg" alt="A woman holding a phone" draggable="false">
+                    </picture>
                 </div>
                 <div class="stats">
                     <div class="stat stat--1">
@@ -72,7 +78,7 @@
             <div class="copy">
                 <p class="paragraph">Everything you buy online</p>
                 <h1 class="heading">The shoppers <br> buy when you <br> do good </h1>
-                <p class="paragraph">Customers buy more, more often when your brand helps <br id="break-2"> them do good they care about. We can help with that.</p>
+                <p class="paragraph">Customers buy more, more often when your brand helps <br class="break-2"> them do good they care about. We can help with that.</p>
                 <button class="btn btn-cta">Get started</button>
             </div>
         </header>
@@ -85,26 +91,29 @@
                     <h2 class="title feature__title">01</h2>
                     <div class="feature--1__info">
                         <h2 class="title">Integrate</h2>
-                        <p>Use one of our ecommerce platform integrations or <br id="break"> our API to seamlessly add impact Trade to your store <br id="break"> or marketplace's checkout process.</p>
+                        <p>Use one of our ecommerce platform integrations or <br class="break"> our API to seamlessly add impact Trade to your store <br class="break"> or marketplace's checkout process.</p>
                     </div>
                     <div class="feature--1__icons">
                         <svg viewBox="0 0 262.035 16.377">
-                            <path d="M0,15V31.377H262.035V15Z" transform="translate(0 -15)">
+                            <path d="M0,15V31.377H262.035V15Z" transform="translate(0 -15)" />
                         </svg>
                         <svg viewBox="0 0 231.654 231.654">
-                            <path d="M117.588,9V117.588H9v14.478H117.588V240.654h14.478V132.066H240.654V117.588H132.066V9Z" transform="translate(-9 -9)">
+                            <path d="M117.588,9V117.588H9v14.478H117.588V240.654h14.478V132.066H240.654V117.588H132.066V9Z" transform="translate(-9 -9)" />
                         </svg>
                     </div>
                 </div>
                 <div class="feature-img mb-medium">
-                    <img src="./img/features.webp" alt="Man holding iPhone eith IMPCT App">
+                    <picture>
+                        <source srcset="./images/features.jpg" draggable="false" type="image/webp">
+                        <img src="./images/features.jpg" alt="Man holding iPhone with IMPCT App">
+                    </picture>
                 </div>
                 <div class="feature feature--2 mb-medium mt-medium">
                     <p class="paragraph feature__title-small">Investing</p>
                     <div class="feature--2__info">
                         <h2 class="title">+Margin</h2>
                         <p class="paragraph">Investments Generated</p>
-                        <p class="paragraph">We're leading a movement to change the way we buy on the <br id="break"> web. Become an impact investor fueled by everything you buy <br id="break"> online. Don't donate away margin to good.</p>
+                        <p class="paragraph">We're leading a movement to change the way we buy on the <br class="break"> web. Become an impact investor fueled by everything you buy <br class="break"> online. Don't donate away margin to good.</p>
                     </div>
                 </div>
             </section>
@@ -139,7 +148,7 @@
                 <div class="brands__copy">
                     <p class="text-1">Make an impact with</p>
                     <h2 class="title">The brands <br> you love</h2>
-                    <p class="paragraph text-2">You shouldn't have to buy &ldquo;ethical products&rdquo; to do good. <br id="break"> Just choose impact trade at checkout with your favorite <br id="break"> brands and marketplaces.</p>
+                    <p class="paragraph text-2">You shouldn't have to buy &ldquo;ethical products&rdquo; to do good. <br class="break"> Just choose impact trade at checkout with your favorite <br id="break"> brands and marketplaces.</p>
                 </div>
                 <div class="brand__icons">
                     <div class="brand__icon brand__icon--1">
@@ -201,7 +210,7 @@
             </section>
             <div class="footer-bar">
                 <svg class="nav__logo" viewBox="0 0 418.18 106.587">
-                    <path d="M3.584,57.782V-44.65H24.357V57.782Zm36.675,0V-44.65H69.484L83.954,6.781q1.576,5.73,3.223,12.679t2.507,10.959L90.4,34.43h.287q2.722-14.756,6.3-27.649L111.46-44.65h29.655V57.782h-19.34V-.956l.86-21.2h-.287q-2.292,12.034-4.441,19.484L100.285,57.782H80.372L63.181-2.675,58.74-22.158h-.287q.86,12.894.86,21.2V57.782Zm116.615,0V-44.65h44.984q17.478,0,26.79,9.6,9.169,9.455,9.169,23.352,0,14.613-9.169,23.495t-25.071,8.882H178.363v37.1ZM178.363-26.6V3.772h21.489q8.023,0,12.32-4.083t4.3-11.246q0-7.163-4.3-11.1T200.139-26.6ZM294.4,59.931q-21.632,0-35.457-14.971T245.123,6.924q0-23.208,13.467-38.394t35.672-15.186q18.337,0,29.44,9.67A37.342,37.342,0,0,1,336.524-12.13h-20.63A20.039,20.039,0,0,0,308.8-24.594q-5.659-4.584-14.541-4.584-13.61,0-20.773,10.028T266.326,6.924q0,15.9,7.664,25.93A24.411,24.411,0,0,0,294.4,42.882q9.026,0,15.042-4.943a19.344,19.344,0,0,0,7.02-13.108H336.81a34.722,34.722,0,0,1-11.318,24.211Q313.888,59.931,294.4,59.931Zm44.984-87.1V-44.65h82.375v17.478h-30.8V57.782H370.19V-27.172Z" transform="translate(-3.584 46.656)">
+                    <path d="M3.584,57.782V-44.65H24.357V57.782Zm36.675,0V-44.65H69.484L83.954,6.781q1.576,5.73,3.223,12.679t2.507,10.959L90.4,34.43h.287q2.722-14.756,6.3-27.649L111.46-44.65h29.655V57.782h-19.34V-.956l.86-21.2h-.287q-2.292,12.034-4.441,19.484L100.285,57.782H80.372L63.181-2.675,58.74-22.158h-.287q.86,12.894.86,21.2V57.782Zm116.615,0V-44.65h44.984q17.478,0,26.79,9.6,9.169,9.455,9.169,23.352,0,14.613-9.169,23.495t-25.071,8.882H178.363v37.1ZM178.363-26.6V3.772h21.489q8.023,0,12.32-4.083t4.3-11.246q0-7.163-4.3-11.1T200.139-26.6ZM294.4,59.931q-21.632,0-35.457-14.971T245.123,6.924q0-23.208,13.467-38.394t35.672-15.186q18.337,0,29.44,9.67A37.342,37.342,0,0,1,336.524-12.13h-20.63A20.039,20.039,0,0,0,308.8-24.594q-5.659-4.584-14.541-4.584-13.61,0-20.773,10.028T266.326,6.924q0,15.9,7.664,25.93A24.411,24.411,0,0,0,294.4,42.882q9.026,0,15.042-4.943a19.344,19.344,0,0,0,7.02-13.108H336.81a34.722,34.722,0,0,1-11.318,24.211Q313.888,59.931,294.4,59.931Zm44.984-87.1V-44.65h82.375v17.478h-30.8V57.782H370.19V-27.172Z" transform="translate(-3.584 46.656)" />
                 </svg>
                 <div class="social">
                     <div class="twitter"></div>
