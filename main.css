@@ -271,7 +271,7 @@ body {
   margin-bottom: -4px;
 }
 
-@media (max-width: 39.375em) {
+@media (max-width: 50em) {
   .btn-mobile {
     display: block;
   }

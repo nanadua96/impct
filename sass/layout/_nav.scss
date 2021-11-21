@@ -83,7 +83,6 @@
   width: 4rem;
   overflow: hidden;
   cursor: pointer;
-
   @include image;
 
   @include media(max, width, 630) {
