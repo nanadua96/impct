@@ -14,22 +14,6 @@ body {
   line-height: 1;
 }
 
-.paragraph {
-  font-size: 1.6rem;
-  color: $gray-dark;
-  line-height: 1.6;
-
-  @include media(max, width, 720) {
-    font-size: 1.4rem;
-  }
-}
-
-.sub-title {
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  color: $gray-dark;
-}
-
 .heading {
   font-size: 10rem;
   color: $gray-dark;
@@ -46,5 +30,34 @@ body {
 
   @include media(max, width, 910) {
     font-size: 4.5rem;
+  }
+}
+
+.sub-title {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: $gray-dark;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  color: $gray-dark;
+  line-height: 1.6;
+
+  @include media(max, width, 720) {
+    font-size: 1.4rem;
+  }
+}
+
+// <br> elements
+.break {
+  @include media(max, width, 430) {
+    display: none;
+  }
+}
+
+.break-2 {
+  @include media(max, width, 370) {
+    display: none;
   }
 }

@@ -31,3 +31,42 @@
     height: 100%;
   }
 }
+
+.tree {
+  width: 100%;
+  height: 50rem;
+  height: 65vh;
+  //   background-color: lightgreen;
+
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  right: 14rem;
+  bottom: -8rem;
+  //   display: grid;
+  //   grid-template-columns: repeat(2, 1fr);
+  //   grid-template-rows: repeat(8, 1fr);
+  //   gap: 2rem;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+//////////////////////////////////////////////
+.benefits-svg-wrapper {
+  width: 100%;
+  height: 60vh;
+
+  //   @include media(max, width, 630) {
+  //    height: 50rem;
+  //   }
+  //////
+  background-color: lightgreen;
+}
+
+.benefits-svg {
+  width: 100%;
+  height: 100%;
+}

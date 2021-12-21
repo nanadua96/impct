@@ -19,11 +19,14 @@ html {
   border: 0;
 }
 
-@for $i from 1 through 6 {
-  h#{$i} {
-    font-weight: normal;
-    font-family: inherit;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-family: inherit;
 }
 
 ul {
@@ -66,18 +69,5 @@ button {
 
   &:focus {
     outline: none;
-  }
-}
-
-// Removes break elements on breakpoint
-.break {
-  @include media(max, width, 430) {
-    display: none;
-  }
-}
-
-.break-2 {
-  @include media(max, width, 370) {
-    display: none;
   }
 }
