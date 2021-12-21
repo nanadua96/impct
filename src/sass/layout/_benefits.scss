@@ -21,6 +21,14 @@
   width: 70%;
   height: 60rem;
 
+  @include media(min, width, 2500) {
+    width: 85%;
+  }
+
+  @include media(min, width, 3500) {
+    width: 70%;
+  }
+
   @include media(max, width, 1780) {
     width: 70%;
     height: 70%;
@@ -36,13 +44,13 @@
     height: 100%;
   }
 
-  @include media(max, width, 1080) {
-    width: 80%;
-  }
+  // @include media(max, width, 1080) {
+  //   width: 80%;
+  // }
 
-  @include media(max, width, 1080) {
-    width: 100%;
-  }
+  // @include media(max, width, 1080) {
+  //   width: 100%;
+  // }
 
   @include media(max, width, 1080) {
     grid-template-columns: repeat(2, 1fr);
