@@ -13,25 +13,26 @@
   display: flex;
   justify-content: space-between;
   color: $light;
+}
 
-  &__info {
-    border-top: $border-light;
-    padding-top: 2rem;
-  }
+.feature__info {
+  border-top: $border-light;
+  padding-top: 2rem;
+}
 
-  &__title {
-    flex: 0 0 35%;
-  }
+.feature__title {
+  flex: 0 0 35%;
+}
 
-  &__title-small {
-    flex: 0 0 50%;
+.feature__title-small {
+  flex: 0 0 50%;
 
-    @include media(max, width, 1080) {
-      margin-bottom: 2rem;
-    }
+  @include media(max, width, 1080) {
+    margin-bottom: 2rem;
   }
 }
 
+/** Feature 1 **/
 .feature--1 {
   @include media(max, width, 1080) {
     flex-direction: column;
@@ -49,14 +50,11 @@
 
 .feature--1__icons {
   display: flex;
+  @include flex-row-gap(2rem);
 
   @include media(max, width, 1080) {
     display: none;
   }
-}
-
-.feature--1__icons > *:not(:last-child) {
-  margin-right: 2rem;
 }
 
 .feature--1__icons svg {
@@ -65,16 +63,17 @@
   fill: $gray-dark;
 }
 
-.feature-img {
+.feature-image-wrapper {
   width: 100%;
 }
 
-.feature-img img {
+.feature-image-wrapper img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
+/** Feature 2 **/
 .feature--2 {
   justify-content: flex-start;
 
@@ -83,44 +82,44 @@
     align-items: center;
     justify-content: center;
   }
+}
 
-  &__info {
-    margin-left: auto;
-    margin-right: 20%;
+.feature--2__info {
+  margin-left: auto;
+  margin-right: 20%;
 
-    @include media(max, width, 1340) {
-      margin-right: 15%;
-    }
-
-    @include media(max, width, 1160) {
-      margin-right: 12%;
-    }
-
-    @include media(max, width, 1070) {
-      margin-right: 10%;
-    }
-
-    @include media(max, width, 1080) {
-      margin: 0;
-    }
-
-    h2 {
-      margin-left: -5rem;
-
-      @include media(max, width, 1080) {
-        margin: 0;
-      }
-    }
+  @include media(max, width, 1340) {
+    margin-right: 15%;
   }
 
-  p {
-    margin-top: 2rem;
-    font-size: 1.4rem;
-    color: $light;
-    line-height: 1.5;
+  @include media(max, width, 1160) {
+    margin-right: 12%;
   }
 
-  p:last-child {
-    color: $gray-dark;
+  @include media(max, width, 1070) {
+    margin-right: 10%;
   }
+
+  @include media(max, width, 1080) {
+    margin: 0;
+  }
+}
+
+.feature--2__info h2 {
+  margin-left: -5rem;
+
+  @include media(max, width, 1080) {
+    margin: 0;
+  }
+}
+
+.feature--2__info p {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: $light;
+  line-height: 1.5;
+}
+
+.feature--2__info p:last-child {
+  color: $gray-dark;
 }

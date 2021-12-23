@@ -1,24 +1,25 @@
 @charset "UTF-8";
 
 // 1. Abstracts
+//! CHANGE
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 
 // 2. Base
-@import 'base/base';
-@import 'base/typography';
-@import 'base/helpers';
+@use 'base/base';
+@use 'base/typography';
+@use 'base/utilities';
 
 // 3. Components
 @import 'components/button';
 
 // 4. Layout
-@import 'layout/nav';
-@import 'layout/header';
-@import 'layout/features';
-@import 'layout/benefits';
-@import 'layout/brands';
-@import 'layout/footer';
+@use 'layout/nav';
+@use 'layout/header';
+@use 'layout/features';
+@use 'layout/benefits';
+@use 'layout/brands';
+@use 'layout/footer';
 
 .test {
   width: 100%;
@@ -32,27 +33,39 @@
   }
 }
 
-.tree {
-  width: 100%;
-  height: 50rem;
-  height: 65vh;
-  //   background-color: lightgreen;
+// .tree {
+//   width: 100%;
+//   height: 50rem;
+//   height: 65vh;
+//   //   background-color: lightgreen;
 
-  position: absolute;
-  height: 50%;
-  width: 50%;
-  right: 14rem;
-  bottom: -8rem;
-  //   display: grid;
-  //   grid-template-columns: repeat(2, 1fr);
-  //   grid-template-rows: repeat(8, 1fr);
-  //   gap: 2rem;
+//   position: absolute;
+//   height: 50%;
+//   width: 50%;
+//   right: 14rem;
+//   bottom: -8rem;
 
-  svg {
-    width: 100%;
-    height: 100%;
-  }
-}
+//   @include media(max, width, 1300) {
+//     right: 10rem;
+//   }
+
+//   @include media(max, width, 1024) {
+//     display: none;
+//   }
+//   //   display: grid;
+//   //   grid-template-columns: repeat(2, 1fr);
+//   //   grid-template-rows: repeat(8, 1fr);
+//   //   gap: 2rem;
+
+//   svg {
+//     width: 100%;
+//     height: 100%;
+//   }
+// }
+
+// svg text {
+//   font-family: 'Neue Haas Grotesk Display Pro Regular', sans-serif;
+// }
 
 //////////////////////////////////////////////
 .benefits-svg-wrapper {

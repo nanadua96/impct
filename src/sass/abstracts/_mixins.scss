@@ -26,6 +26,21 @@
   }
 }
 
+/* Fallback 'gap' property for Safari and older browsers */
+@mixin flex-row-gap($gap) {
+  & > *:not(:last-child) {
+    margin-right: $gap;
+    margin-bottom: 0;
+  }
+}
+
+@mixin flex-column-gap($gap) {
+  & > *:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: $gap;
+  }
+}
+
 @mixin image {
   img {
     display: block;
