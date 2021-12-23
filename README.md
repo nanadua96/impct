@@ -1,41 +1,37 @@
 # IMPCT
 
-<a href="https://shapeupghana.vercel.app" target="_blank" rel="noopener">
-  <img src="./src/assets/github.webp" alt="Something sexy here" height="480" width="640"/>
+<a href="https://impct.vercel.app" target="_blank" rel="noopener">
+  <img src="./src/assets/github.webp" alt="IMPCT screenshot" height="480" width="640"/>
 </a>
 
 > Ecommerce agency landing page
 
-## Installation
+## Run Locally
+
+Clone the project
 
 ```bash
-npm install
+  git clone https://github.com/nanadua96/impct
 ```
 
-## Usage
-
-Start dev server
+Go to the project directory
 
 ```bash
-npm run dev
+  cd impct
 ```
 
-Build for production
+Install dependencies
 
 ```bash
-npm run build
+  npm install
 ```
 
-## Written in
+Start the server
 
-- HTML
-
-- Sass
+```bash
+  npm run dev
+```
 
 ## Acknowledgements
 
-- Designed by blah blah blah
-
-## License
-
-- This project is under the `MIT` license. See [LICENSE](LICENSE) for more information.
+- Designed by [Marina Matijaca™](https://dribbble.com/shots/14090969-Impct).
