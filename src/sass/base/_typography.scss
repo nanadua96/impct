@@ -50,6 +50,7 @@ body {
 }
 
 // <br> elements
+//! move to respectivcve sections
 .break {
   @include media(max, width, 430) {
     display: none;
