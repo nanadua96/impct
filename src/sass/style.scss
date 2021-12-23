@@ -6,20 +6,20 @@
 @import 'abstracts/mixins';
 
 // 2. Base
-@use 'base/base';
-@use 'base/typography';
-@use 'base/utilities';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
 
 // 3. Components
 @import 'components/button';
 
 // 4. Layout
-@use 'layout/nav';
-@use 'layout/header';
-@use 'layout/features';
-@use 'layout/benefits';
-@use 'layout/brands';
-@use 'layout/footer';
+@import 'layout/nav';
+@import 'layout/header';
+@import 'layout/features';
+@import 'layout/benefits';
+@import 'layout/brands';
+@import 'layout/footer';
 
 .test {
   width: 100%;
