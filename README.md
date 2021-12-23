@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# impct
-Ecommerce agency landing page
-=======
 # IMPCT
 
 <a href="https://impct.vercel.app" target="_blank" rel="noopener">
@@ -39,4 +35,3 @@ Start the server
 ## Acknowledgements
 
 - Designed by [Marina Matijaca™](https://dribbble.com/shots/14090969-Impct).
->>>>>>> layout
