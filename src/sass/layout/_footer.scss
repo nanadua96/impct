@@ -1,10 +1,12 @@
+@use '../abstracts/variables';
+
 /** Row 1 **/
 .footer .row-1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  @include media(max, width, 980) {
+  @include media(max, width, variables.$tablets) {
     text-align: center;
     flex-direction: column;
     align-items: center;
@@ -38,7 +40,7 @@
   display: flex;
   justify-content: space-between;
 
-  @include media(max, width, 980) {
+  @include media(max, width, variables.$tablets) {
     flex-direction: column;
     @include flex-column-gap(4rem);
   }
@@ -81,16 +83,16 @@
 }
 
 .twitter {
-  background-color: $twitter;
+  background-color: #53bef9;
   @extend %circle;
 }
 
 .facebook {
-  background-color: $facebook;
+  background-color: #336ac8;
   @extend %circle;
 }
 
 .youtube {
-  background-color: $youtube;
+  background-color: #f04643;
   @extend %circle;
 }

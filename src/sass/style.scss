@@ -43,6 +43,14 @@
   width: 50%;
   right: 14rem;
   bottom: -8rem;
+
+  @include media(max, width, 1300) {
+    right: 10rem;
+  }
+
+  @include media(max, width, 1024) {
+    display: none;
+  }
   //   display: grid;
   //   grid-template-columns: repeat(2, 1fr);
   //   grid-template-rows: repeat(8, 1fr);

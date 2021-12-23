@@ -1,28 +1,23 @@
 // Colors
 $white: #ffffff;
 $black: #000000;
-
 $light: #f2f2f2;
 $gray-light: #00000021;
 $gray-dark: #9a9a9a;
 $dark: #1a1a1a;
-
 $orange: #f28e78;
 $orange-light: #f4dbd6;
 $orange-dark: #fc734f;
-
 $teal: #6cb9c0;
 $teal-light: #92dbe1;
 
-$facebook: #336ac8;
-$twitter: #53bef9;
-$youtube: #f04643;
-
-$brand-card: #d7e2e8;
-
-// Typeface
+// Font
 $font: 'Neue Haas Grotesk Display Pro Regular', sans-serif;
 
 // Borders
 $border: 1px solid #00000021;
 $border-light: 1px solid#ffffff2b;
+
+// Breakpoints
+$tablets: 1024;
+$smartphones: 550;
