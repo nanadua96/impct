@@ -1,24 +1,25 @@
 @charset "UTF-8";
 
 // 1. Abstracts
+//! CHANGE
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 
 // 2. Base
-@import 'base/base';
-@import 'base/typography';
-@import 'base/utilities';
+@use 'base/base';
+@use 'base/typography';
+@use 'base/utilities';
 
 // 3. Components
 @import 'components/button';
 
 // 4. Layout
-@import 'layout/nav';
-@import 'layout/header';
-@import 'layout/features';
-@import 'layout/benefits';
-@import 'layout/brands';
-@import 'layout/footer';
+@use 'layout/nav';
+@use 'layout/header';
+@use 'layout/features';
+@use 'layout/benefits';
+@use 'layout/brands';
+@use 'layout/footer';
 
 .test {
   width: 100%;
