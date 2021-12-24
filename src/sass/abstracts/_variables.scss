@@ -15,8 +15,8 @@ $teal-light: #92dbe1;
 $font: 'Neue Haas Grotesk Display Pro Regular', sans-serif;
 
 // Borders
-$border: 1px solid #00000021;
-$border-light: 1px solid#ffffff2b;
+$border: 1px solid rgba(0, 0, 0, 0.13);
+$border-light: 1px solid rgba(255, 255, 255, 0.17);
 
 // Breakpoints
 $tablets: 1024;

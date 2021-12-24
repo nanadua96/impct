@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Neue Haas Grotesk Display Pro Regular', sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 %font {
@@ -14,9 +14,8 @@ body {
   line-height: 1;
 }
 
-.heading {
-  font-size: 10rem;
-  color: $gray-dark;
+.headline {
+  font-size: clamp(4rem, 6vw, 10rem);
   @extend %font;
 }
 
@@ -41,8 +40,8 @@ body {
 
 .paragraph {
   font-size: 1.6rem;
-  color: $gray-dark;
   line-height: 1.6;
+  color: $gray-dark;
 
   @include media(max, width, 720) {
     font-size: 1.4rem;

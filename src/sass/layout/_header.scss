@@ -31,7 +31,8 @@
   height: 100%;
   width: 70%;
   border-radius: 1rem;
-  @include image;
+  display: block;
+  object-fit: cover;
 
   @include media(max, width, variables.$tablets) {
     width: 100%;
@@ -64,7 +65,7 @@
 // Stats - Tablet & Mobile version
 .stats {
   display: none;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-template-rows: auto;
   width: 100%;
   gap: 2rem;
@@ -86,7 +87,7 @@
   hyphens: auto;
 
   h4 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 
   p {
@@ -128,48 +129,13 @@
   }
 }
 
+// "Everything you buy online" text
 .copy p:first-child {
   text-transform: uppercase;
   font-size: 1.4rem;
   letter-spacing: 2px;
 
-  @include media(max, width, 720) {
-    display: none;
-  }
-}
-
-.copy h1 {
-  color: $dark;
-
-  //! USE CLAMP()
-  @include media(max, width, 1610) {
-    font-size: 9rem;
-  }
-
-  @include media(max, width, 1445) {
-    font-size: 8.5rem;
-  }
-
-  @include media(max, width, 1370) {
-    font-size: 7.5rem;
-  }
-
-  @include media(max, width, 975) {
-    font-size: 7rem;
-  }
-
-  @include media(max, width, 910) {
-    font-size: 6rem;
-  }
-
-  @include media(max, width, 780) {
-    font-size: 5.5rem;
-  }
-
-  @include media(max, width, 780) {
-    font-size: 5rem;
-  }
-  @include media(max, width, 360) {
-    font-size: 4rem;
+  @include media(max, width, variables.$smartphones) {
+    font-size: 1rem;
   }
 }
