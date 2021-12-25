@@ -29,24 +29,27 @@ h6 {
   font-family: inherit;
 }
 
-ul {
+li {
   list-style-type: none;
 }
 
-a:link,
-a:visited {
+a {
   text-decoration: none;
   color: currentColor;
-}
 
-a:hover,
-a:active {
-  text-decoration: underline;
-}
+  &:focus {
+    outline: 0;
+  }
 
-a:focus-visible {
-  outline: 1px solid $dark;
-  outline-offset: 0.5rem;
+  &:hover {
+    @media (hover: hover) {
+      text-decoration: underline;
+    }
+  }
+
+  &:focus-visible {
+    text-decoration: underline;
+  }
 }
 
 svg {
@@ -56,7 +59,8 @@ svg {
 }
 
 img,
-picture {
+picture,
+video {
   max-width: 100%;
 }
 
@@ -66,8 +70,4 @@ button {
   font-family: $font;
   font-size: 1.6rem;
   cursor: pointer;
-
-  &:focus {
-    outline: none;
-  }
 }

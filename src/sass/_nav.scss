@@ -8,9 +8,6 @@
   align-items: center;
   height: 8rem;
   border-bottom: variables.$border;
-  // position: sticky;
-  // top: 0;
-  // z-index: 1;
 
   @include mixins.media(max, width, variables.$tablets) {
     height: 6rem;
@@ -60,6 +57,18 @@
   align-items: center;
   background-color: variables.$white;
   @include mixins.flex-row-gap(5px);
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:focus-visible {
+    background-color: variables.$orange-dark;
+    color: variables.$white;
+    border-radius: 50rem;
+    padding-right: 0;
+    padding-left: 1rem;
+  }
 }
 
 .user-name {
@@ -98,7 +107,7 @@
 .hamburger-button {
   display: none;
 
-  @include media(max, width, variables.$tablets) {
+  @include mixins.media(max, width, variables.$tablets) {
     display: block;
     background-color: transparent;
     padding: 0.5rem 1rem;
