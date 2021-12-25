@@ -1,0 +1,29 @@
+@use 'mixins';
+@use 'variables';
+
+.button {
+  background-color: variables.$white;
+  border: $border;
+  transition: border-color, background-color 120ms ease-out;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button:hover,
+.button:focus-visible {
+  outline: 0;
+  background-color: $orange-dark;
+  border-color: $orange-dark;
+  color: $white;
+
+  & > * {
+    color: $white;
+  }
+}
+
+.button-cta {
+  padding: 1.5rem 5rem;
+  border-radius: 1rem;
+}

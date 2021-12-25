@@ -1,0 +1,113 @@
+@use 'mixins';
+@use 'variables';
+
+.nav-bar {
+  background-color: variables.$white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  border-bottom: variables.$border;
+  // position: sticky;
+  // top: 0;
+  // z-index: 1;
+
+  @include mixins.media(max, width, variables.$tablets) {
+    height: 6rem;
+  }
+}
+
+/*=====================================
+                 LINKS 
+ =====================================*/
+.nav-links {
+  display: flex;
+  padding-left: 0;
+  @include mixins.flex-row-gap(6.4rem);
+
+  @include mixins.media(max, width, variables.$tablets) {
+    display: none;
+  }
+}
+
+/*=====================================
+                USER 
+ =====================================*/
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include mixins.flex-row-gap(2rem);
+}
+
+.user-credits {
+  padding: 0.5rem 2rem;
+  border-radius: 0.8rem;
+
+  @include mixins.media(max, width, variables.$tablets) {
+    display: none;
+  }
+
+  & > * {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.user-button {
+  display: flex;
+  align-items: center;
+  background-color: variables.$white;
+  @include mixins.flex-row-gap(5px);
+}
+
+.user-name {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+
+  svg {
+    margin-left: 0.5rem;
+    height: 0.8rem;
+    width: 0.8rem;
+  }
+}
+
+.user-avatar {
+  background-color: transparent;
+  display: flex;
+  padding: 0;
+}
+
+.user-avatar img {
+  margin: auto;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+
+  @include mixins.media(max, width, variables.$tablets) {
+    height: calc(4rem - 1rem);
+    width: calc(4rem - 1rem);
+  }
+}
+
+/*=====================================
+            HAMBURGER BUTTON 
+ =====================================*/
+.hamburger-button {
+  display: none;
+
+  @include media(max, width, variables.$tablets) {
+    display: block;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+}
+
+.hamburger-button svg {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-bottom: -4px;
+}

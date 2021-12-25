@@ -2,21 +2,23 @@
 
 // 1. Abstracts
 //! CHANGE
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
+@import 'variables';
+@import 'mixins';
 
-// 2. Base
-@import 'base/base';
-@import 'base/typography';
-@import 'base/utilities';
+// Base
+@import 'base';
+@import 'typography';
+@import 'utilities';
 
-// 3. Components
-@import 'components/button';
+// Components
+@import 'button';
+@import 'links';
+@import 'logo';
 
-// 4. Layout
-@import 'layout/nav';
-@import 'layout/header';
-@import 'layout/features';
-@import 'layout/benefits';
-@import 'layout/brands';
-@import 'layout/footer';
+// Layout
+@import 'nav';
+@import 'header';
+@import 'features';
+@import 'benefits';
+@import 'brands';
+@import 'footer';
