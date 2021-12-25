@@ -34,7 +34,7 @@
 .contact a:link,
 .contact a:visited {
   font-size: 1.4rem;
-  color: $orange-dark;
+  color: variables.$orange-dark;
 }
 
 // Sitemap
@@ -64,7 +64,7 @@
                  ROW 2 
  =====================================*/
 .footer .row-2 {
-  border-top: $border;
+  border-top: variables.$border;
   display: flex;
   justify-content: space-between;
 }

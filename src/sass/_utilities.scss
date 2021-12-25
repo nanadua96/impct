@@ -80,7 +80,7 @@
   padding-top: 16rem;
   padding-bottom: 16rem;
 
-  @include media(max, width, variables.$tablets) {
+  @include mixins.media(max, width, variables.$tablets) {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
@@ -97,7 +97,7 @@
   padding-top: 16rem;
   padding-bottom: 16rem;
 
-  @include media(max, width, variables.$tablets) {
+  @include mixins.media(max, width, variables.$tablets) {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }

@@ -1,12 +1,15 @@
+@use 'mixins';
+@use 'variables';
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
 
-  @include media(min, width, 2500) {
+  @include mixins.media(min, width, 2500) {
     font-size: 100%;
   }
 
-  @include media(min, width, 3000) {
+  @include mixins.media(min, width, 3000) {
     font-size: 120%;
   }
 }
@@ -67,7 +70,7 @@ video {
 button {
   border: 0;
   border-radius: 0;
-  font-family: $font;
+  font-family: variables.$font;
   font-size: 1.6rem;
   cursor: pointer;
 }
