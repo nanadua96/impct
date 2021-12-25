@@ -3,8 +3,8 @@
 
 .features {
   background-color: variables.$dark;
-  padding-top: 8rem;
-  padding-bottom: 12rem;
+  padding-top: 8rem; //! util
+  padding-bottom: 12rem; //! util
 
   @include media(max, width, variables.$tablets) {
     text-align: center;
@@ -29,18 +29,6 @@
   padding-top: 2rem;
 }
 
-.feature-title {
-  flex-basis: 35%;
-}
-
-.feature-title-small {
-  flex-basis: 50%;
-
-  @include media(max, width, variables.$tablets) {
-    margin-bottom: 2rem;
-  }
-}
-
 .feature-break {
   @include media(max, width, 430) {
     display: none;
@@ -50,10 +38,13 @@
 /*=====================================
                FEATURE 1 
  =====================================*/
+.feature-1-title {
+  flex-basis: 35%;
+}
+
 .feature-1 p {
   margin-top: 2rem;
   font-size: 1.4rem;
-  color: variables.$gray-dark;
   -webkit-hyphens: auto;
   hyphens: auto;
   line-height: 1.5;
@@ -71,7 +62,14 @@
 .feature-1-icons svg {
   height: 3.2rem;
   width: 3.2rem;
+}
+
+.minus-icon {
   fill: variables.$gray-dark;
+}
+
+.plus-icon {
+  fill: variables.$light;
 }
 
 /*=====================================
@@ -92,6 +90,14 @@
  =====================================*/
 .feature-2 {
   justify-content: flex-start;
+}
+
+.feature-2-title {
+  flex-basis: 50%;
+
+  @include media(max, width, variables.$tablets) {
+    margin-bottom: 2rem;
+  }
 }
 
 .feature-2-info {
@@ -126,12 +132,7 @@
 .feature-2-info p {
   margin-top: 2rem;
   font-size: 1.4rem;
-  color: variables.$light;
   line-height: 1.5;
   -webkit-hyphens: auto;
   hyphens: auto;
-}
-
-.feature-2-info p:last-child {
-  color: variables.$gray-dark;
 }

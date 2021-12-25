@@ -1,4 +1,7 @@
-// Container padding
+@use 'mixins';
+@use 'variables';
+
+// Container
 .container-small {
   padding: 0 5vw;
 }
@@ -43,17 +46,21 @@
   padding-top: 16rem;
   padding-bottom: 16rem;
 
-  @include media(max, width, 1080) {
+  @include media(max, width, variables.$tablets) {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
 }
 
 // Text
+.text-light {
+  color: variables.$light;
+}
+
 .text-dark {
-  color: $dark;
+  color: variables.$dark;
 }
 
 .text-gray-dark {
-  color: $gray-dark;
+  color: variables.$gray-dark;
 }
