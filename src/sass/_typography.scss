@@ -48,17 +48,3 @@ body {
     font-size: 1.4rem;
   }
 }
-
-// <br> elements
-//! move to respectivcve sections
-.break {
-  @include media(max, width, 430) {
-    display: none;
-  }
-}
-
-.break-2 {
-  @include media(max, width, 370) {
-    display: none;
-  }
-}

@@ -3,7 +3,7 @@
 
 .button {
   background-color: variables.$white;
-  border: $border;
+  border: variables.$border;
   transition: border-color, background-color 120ms ease-out;
 }
 
@@ -14,24 +14,24 @@
 .button:hover {
   @media (hover: hover) {
     outline: 0;
-    background-color: $orange-dark;
-    border-color: $orange-dark;
-    color: $white;
+    background-color: variables.$orange-dark;
+    border-color: variables.$orange-dark;
+    color: variables.$white;
 
     & > * {
-      color: $white;
+      color: variables.$white;
     }
   }
 }
 
 .button:focus-visible {
   outline: 0;
-  background-color: $orange-dark;
-  border-color: $orange-dark;
-  color: $white;
+  background-color: variables.$orange-dark;
+  border-color: variables.$orange-dark;
+  color: variables.$white;
 
   & > * {
-    color: $white;
+    color: variables.$white;
   }
 }
 
