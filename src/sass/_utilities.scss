@@ -2,6 +2,9 @@
 @use 'variables';
 
 // Container
+/*=====================================
+               CONTAINER 
+ =====================================*/
 .container-small {
   padding: 0 5vw;
 }
@@ -10,7 +13,9 @@
   padding: 0 10vw;
 }
 
-// Margins
+/*=====================================
+                MARGINS 
+ =====================================*/
 .m-medium {
   margin-top: 8rem;
   margin-bottom: 8rem;
@@ -36,7 +41,36 @@
   margin-bottom: 16rem;
 }
 
-// Padding
+////////////////////////////////////
+//* USE THIS
+.margin-16 {
+  margin: 16rem;
+}
+
+.margin-block-8 {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.margin-top-8 {
+  margin-top: 8rem;
+}
+
+.margin-bottom-8 {
+  margin-bottom: 8rem;
+}
+
+.margin-top-16 {
+  margin-top: 16rem;
+}
+
+.margin-bottom-16 {
+  margin-bottom: 16rem;
+}
+
+/*=====================================
+                PADDING 
+ =====================================*/
 .p-medium {
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -52,7 +86,34 @@
   }
 }
 
-// Text
+////////////////////////////////////
+//* USE THIS
+.padding-block-8 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.padding-block-16 {
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+
+  @include media(max, width, variables.$tablets) {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.padding-top-8 {
+  padding-top: 8rem;
+}
+
+.padding-bottom-8 {
+  padding-bottom: 8rem;
+}
+
+/*=====================================
+             TEXT COLORS
+ =====================================*/
 .text-light {
   color: variables.$light;
 }
