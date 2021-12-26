@@ -125,3 +125,16 @@
 .text-gray-dark {
   color: variables.$gray-dark;
 }
+
+//! MOVE!
+.break {
+  @include mixins.media(max, width, 430) {
+    display: none;
+  }
+}
+
+.break-2 {
+  @include mixins.media(max, width, 370) {
+    display: none;
+  }
+}
