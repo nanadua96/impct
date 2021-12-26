@@ -13,42 +13,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-%font {
-  text-transform: capitalize;
-  line-height: 1;
-}
-
-.headline {
-  font-size: clamp(4rem, 6vw, 10rem);
-  @extend %font;
-}
-
-//! CHANEG ALL TO THIS!
 .heading {
   font-size: clamp(4rem, 6vw, 10rem);
-  @extend %font;
-}
-
-.title {
-  font-size: 8rem;
-  @extend %font;
-
-  font-size: clamp(4rem, 6vw, 10rem);
-
-  // @include media(max, width, 1380) {
-  //   font-size: 6rem;
-  // }
-
-  // @include media(max, width, 910) {
-  //   font-size: 4.5rem;
-  // }
-}
-
-//! REMOVE THIS AND ADD FONT COLOR TO CLASSLIST
-.sub-title {
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  color: variables.$gray-dark;
+  text-transform: capitalize;
+  line-height: 1;
 }
 
 .paragraph {
@@ -61,6 +29,14 @@ body {
   }
 }
 
-.small {
-  font-size: 1.4rem;
+.break-1 {
+  @include mixins.media(max, width, 430) {
+    display: none;
+  }
+}
+
+.break-2 {
+  @include mixins.media(max, width, 370) {
+    display: none;
+  }
 }

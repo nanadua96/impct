@@ -3,8 +3,7 @@
 
 .features {
   background-color: variables.$dark;
-  padding-top: 8rem; //! util
-  padding-bottom: 12rem; //! util
+  padding-bottom: 12rem;
 
   @include mixins.media(max, width, variables.$tablets) {
     text-align: center;

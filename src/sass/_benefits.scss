@@ -6,8 +6,6 @@
 }
 
 .benefits h2 {
-  padding-bottom: 8rem; //! uTILITY
-
   @include mixins.media(max, width, variables.$tablets) {
     text-align: center;
   }

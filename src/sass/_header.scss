@@ -3,12 +3,11 @@
 
 .header {
   display: flex;
-  min-height: auto;
 
   @include mixins.media(max, width, variables.$tablets) {
     flex-direction: column-reverse;
     text-align: center;
-    margin-bottom: 8rem; //! UTILITY
+    margin-bottom: 8rem;
   }
 }
 
