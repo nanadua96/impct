@@ -1,7 +1,7 @@
 # IMPCT
 
 <a href="https://impct.vercel.app" target="_blank" rel="noopener">
-  <img src="./src/assets/github.webp" alt="IMPCT screenshot" height="480" width="640"/>
+    <img src="./src/assets/github.webp" alt="IMPCT screenshot" height="100%" width="100%"/>
 </a>
 
 > Ecommerce agency landing page
