@@ -34,4 +34,4 @@ Start the server
 
 ## Acknowledgements
 
-- Designed by [Marina Matijaca™](https://dribbble.com/shots/14090969-Impct).
+- Designed by [Marina Matijaca™](https://dribbble.com/shots/14090969-Impct)
