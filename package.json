@@ -6,7 +6,7 @@
     "build": "parcel build src/index.html --no-source-maps --dist-dir ./public --public-url ."
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.1",
-    "parcel": "^2.0.1"
+    "@parcel/transformer-sass": "2.0.1",
+    "parcel": "2.0.1"
   }
 }
