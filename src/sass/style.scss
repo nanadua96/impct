@@ -1,18 +1,18 @@
 @charset "UTF-8";
 
 // Base
-@import 'base';
-@import 'typography';
-@import 'utilities';
+@use 'base';
+@use 'typography';
+@use 'utilities';
 
 // Components
-@import 'button';
-@import 'logo';
+@use 'button';
+@use 'logo';
 
 // Layout
-@import 'nav';
-@import 'header';
-@import 'features';
-@import 'benefits';
-@import 'brands';
-@import 'footer';
+@use 'nav';
+@use 'header';
+@use 'features';
+@use 'benefits';
+@use 'brands';
+@use 'footer';
