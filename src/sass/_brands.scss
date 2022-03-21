@@ -44,12 +44,37 @@
 }
 
 /** Icons **/
+.brand-icons.large {
+  @include mixins.media(max, width, variables.$tablets) {
+    display: none;
+  }
+}
+
+.brand-icons.small {
+  display: none;
+
+  @include mixins.media(max, width, variables.$tablets) {
+    display: grid;
+  }
+}
+
 .brand-icons {
   flex-basis: 50%;
   width: 100%;
+
+  @include mixins.media(max, width, variables.$tablets) {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 10vw;
+    padding-bottom: 6rem;
+  }
 }
 
 .brand-icons svg {
   height: 100%;
   width: 100%;
+
+  @include mixins.media(max, width, variables.$tablets) {
+    height: 5rem;
+    width: 5rem;
+  }
 }
