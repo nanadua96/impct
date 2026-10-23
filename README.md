@@ -1,6 +1,6 @@
 # IMPCT
 
-<a href="https://impct.vercel.app" target="_blank" rel="noopener">
+<a href="https://impct.onrender.com/" target="_blank" rel="noopener">
   <img src="./src/assets/github.webp" alt="IMPCT screenshot" height="100%" width="100%"/>
 </a>
 
